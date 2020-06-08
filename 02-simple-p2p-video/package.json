@@ -1,0 +1,23 @@
+{
+  "name": "01-simple-p2p",
+  "version": "1.0.0",
+  "description": "WebRTC Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdvj/webrtc-demo.git"
+  },
+  "author": "Fernando De Vega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdvj/webrtc-demo/issues"
+  },
+  "homepage": "https://github.com/fdvj/webrtc-demo#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "simple-peer": "^9.7.2"
+  }
+}
