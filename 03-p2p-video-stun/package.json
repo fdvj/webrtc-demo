@@ -1,10 +1,11 @@
 {
-  "name": "02-simple-p2p-video",
+  "name": "03-p2p-video-stun",
   "version": "1.0.0",
   "description": "WebRTC Course",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
