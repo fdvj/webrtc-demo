@@ -1,4 +1,4 @@
-navigator.mediaDevices.getUserMedia({ video: true, audio: false}, (stream) => {
+navigator.mediaDevices.getUserMedia({ video: true, audio: false}).then((stream) => {
 
   const Peer = require('simple-peer');
 
@@ -34,8 +34,6 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: false}, (stream) => {
     cam.play();
   });
 
-}, (err) => {
-  console.error(err);
 });
 
 
