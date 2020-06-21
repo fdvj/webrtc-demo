@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WebRTC With Signaling Server</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="videos">
+      <div class="video-stream">
+        <h3>You</h3>
+        <video id="user-video"></video>
+      </div>
+      <div class="video-stream">
+        <h3>Them</h3>
+        <video id="peer-video"></video>
+      </div>
+    </div>
+    <div id="lobby">
+      <h2>Lobby</h2>
+      <ul id="user-list"></ul>
+      <button id="join">Join</button>
+    </div>
+    <video id="cam" src=""></video>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
