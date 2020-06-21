@@ -1,0 +1,30 @@
+{
+  "name": "04-signaling-server-client",
+  "version": "1.0.0",
+  "description": "WebRTC Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdvj/webrtc-demo.git"
+  },
+  "author": "Fernando De Vega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdvj/webrtc-demo/issues"
+  },
+  "homepage": "https://github.com/fdvj/webrtc-demo#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.10.3",
+    "parcel-bundler": "^1.12.4",
+    "simple-peer": "^9.7.2",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.3"
+  }
+}
