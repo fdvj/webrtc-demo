@@ -20,7 +20,15 @@ class Call {
       this.peer = new Peer({
         initiator: true,
         stream: this.stream,
-        config: { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] }
+        config: {
+          iceServers: [{ 
+            url: 'stun:stun.l.google.com:19302' 
+          }, {
+            url: 'turn:turn.fernandodevega.net:3478',
+            username: 'fercho',
+            credential: 'turn'
+          }]
+        }
       });
 
       this.peer.on('signal', this.channel);
