@@ -20,7 +20,7 @@ let currentCall;
  */
 
 // Established our connection to the signaling server (Socket.io)
-const socket = io('http://localhost');
+const socket = io('https://signal.fernandodevega.net:443');
 
 // Open the connection to the lobby
 socket.on('roomUpdated', (users) => {
