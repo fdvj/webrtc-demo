@@ -48,10 +48,14 @@ socket.on('call', async ({ from, data: offer }) => {
   }
 
   currentCall.answer(offer);
+  document.getElementById('user-name').innerText = user;
+  document.getElementById('peer-name').innerText = from;
 });
 
-socket.on('answer', ({ data }) => {
+socket.on('answer', ({ data, from }) => {
   currentCall.answer(data);
+  document.getElementById('user-name').innerText = user;
+  document.getElementById('peer-name').innerText = from;
 });
 
 ///////////////////////////////////////////////////////////
@@ -80,6 +84,7 @@ async function onCallClick(evt) {
 
   // Execute the call
   currentCall.make();
+  document.getElementById('user-name').innerText = user;;
 }
 
 /**
